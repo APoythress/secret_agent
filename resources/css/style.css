@@ -9,10 +9,6 @@ header {
   border: 1px solid black;
 }
 
-div {
-  border: 1px solid red;
-}
-
 body {
   margin: 0 auto;
 }
@@ -111,6 +107,10 @@ a:link {
   height: auto;
 }
 
+#mobile {
+  display: none;
+}
+
 /* Product boxes */
 
 #product_container {
@@ -175,11 +175,16 @@ a:link {
   padding: 1rem 2rem;
 }
 
-.location,
 .hours {
   width: 35%;
   margin-bottom: 4rem;
 }
+
+.location {
+  width: 35%;
+  margin-bottom: 4rem;
+}
+
 
 /* Footer Section */
 
@@ -194,4 +199,115 @@ footer {
   display: flex;
   align-items: center;
   width: 960px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+  .content_1 {
+    font-size: .75rem;
+  }
+
+  .content_2 {
+    font-size: 1.75rem;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .box {
+    width: 35%;
+  }
+
+  .hours {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  .business_container {
+    justify-content: space-between;
+  }
+
+  .nav_container span {
+    display: none;
+  }
+
+  #mobile {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .content_1 {
+    font-size: .77rem;
+  }
+
+  .content_2 {
+    font-size: 1rem;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  .watch {
+    display: none;
+  }
+
+/* Banner Changes */
+
+  .banner {
+    height: 15rem;
+  }
+
+  .banner .container {
+    justify-content: flex-end;
+  }
+
+  .new_arrival {
+    padding: 1rem 2rem;
+  }
+
+/* Product & Business info Changes */
+
+  .products {
+    justify-content: center;
+  }
+
+  .pen {
+    width: 90%;
+  }
+
+  .business_container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .business_info {
+    flex-direction: column;
+    width: 90%;
+  }
+
+
+  .location, .hours {
+    display: block;
+    width: 90%;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  .footer_container {
+    justify-content: center;
+  }
+
 }
