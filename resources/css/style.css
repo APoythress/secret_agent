@@ -14,7 +14,7 @@ div {
 }
 
 body {
-  margin: auto;
+  margin: 0 auto;
 }
  /* Begin actual CSS */
 
@@ -179,4 +179,19 @@ a:link {
 .hours {
   width: 35%;
   margin-bottom: 4rem;
+}
+
+/* Footer Section */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 5em 0;
+}
+
+.footer_container {
+  display: flex;
+  align-items: center;
+  width: 960px;
 }
