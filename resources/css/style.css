@@ -2,6 +2,7 @@ html {
   font-size: 18px;
   color: white;
   font-family: Helvetica;
+  font-weight: bold;
 }
 
 header {
@@ -150,4 +151,32 @@ a:link {
   padding: 0.5rem;
   text-align: center;
   color: white;
+}
+
+/* Business Info Section */
+
+.business_container {
+  display: flex;
+  justify-content: center;
+}
+
+.business_info {
+  display: flex;
+  justify-content: space-between;
+  width: 960px;
+}
+
+.business_info p {
+  color: black;
+}
+
+.box  {
+  background-color: black;
+  padding: 1rem 2rem;
+}
+
+.location,
+.hours {
+  width: 35%;
+  margin-bottom: 4rem;
 }
